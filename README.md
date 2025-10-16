@@ -3,8 +3,7 @@ VERSION: 1.0
 DATE: 2025-10-16
 AUTHOR: Chahine Nejma
 AFFILIATIONS: LATMOS (CNRS), CentraleSupélec
-DOCUMENT: Rapport_Îlots_de_chaleur_et_précipitations.pdf
-LANGUAGE: French (report)
+DOCUMENT: Rapport_Îlots_de_chaleur_et_précipitations.pdf (French)
 
 ------------------------------------------------------------
 OVERVIEW
