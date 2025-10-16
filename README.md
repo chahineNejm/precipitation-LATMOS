@@ -1,30 +1,40 @@
-Îlots de chaleur & précipitations — LATMOS project
+PROJECT: Urban Heat Islands and Precipitation — LATMOS (CNRS)
+VERSION: 1.0
+DATE: 2025-10-16
+AUTHOR: Chahine Nejma
+AFFILIATIONS: LATMOS (CNRS), CentraleSupélec
+DOCUMENT: Rapport_Îlots_de_chaleur_et_précipitations.pdf
+LANGUAGE: French (report)
 
-This repository hosts the PDF report “Îlots de chaleur et précipitations” produced at LATMOS (CNRS). The work explores statistical and ML methods to study interactions between urban heat islands (UHIs) and precipitation patterns over an urban region.
+------------------------------------------------------------
+OVERVIEW
+------------------------------------------------------------
+This repository archives a technical report investigating interactions between urban heat islands (UHI) and precipitation. The study examines how UHI intensity relates to rainfall occurrence and intensity, and analyzes the spatio-temporal organization of precipitation events around urban areas.
 
-Report: Rapport_Îlots_de_chaleur_et_précipitations.pdf
- (in French). 
+KEYWORDS
+Urban Heat Island (UHI); Precipitation; Spatio-temporal Analysis; Clustering (DBSCAN, DTW);
+Statistical Testing; Meteorology.
 
-Project at a glance
+CONTENTS
+- README.txt (this file)
+- Rapport_Îlots_de_chaleur_et_précipitations.pdf
 
-Goal: quantify links between UHI intensity and rainfall occurrence/intensity, and characterize spatio-temporal organization of precipitation around urban areas.
+------------------------------------------------------------
+EXECUTIVE SUMMARY
+------------------------------------------------------------
+Objective:
+- Quantify links between UHI intensity and precipitation patterns in and around urban areas.
 
 Data (typical sources):
+- Urban temperature indicators (e.g., land surface temperature, station networks, or reanalysis).
+- Radar or rain-gauge precipitation products.
 
-Urban/temperature indicators (e.g., station networks or reanalysis / satellite LST).
+Methods (high level):
+- Event detection and spatio-temporal grouping (e.g., DBSCAN; DTW where applicable).
+- Urban–rural stratification (buffer rings, upwind/downwind sectors).
+- Association analysis with robustness checks (permutation and bootstrap).
 
-Radar/rain-gauge precipitation fields (event-level and aggregated).
+Findings:
+- The report summarizes relationships between UHI strength and rainfall probability/intensity,
+  including directional effects and seasonal modulation. See the PDF for figures and details.
 
-Methods (high-level):
-
-Preprocessing & quality control of meteorological series.
-
-Spatio-temporal event definition and clustering (e.g., DBSCAN), with optional sequence similarity (e.g., DTW).
-
-Feature extraction: UHI metrics, upwind/downwind stratification, urban vs rural buffers.
-
-Statistical association tests and simple predictive baselines.
-
-Outputs: figures/tables linking UHI strength to rainfall probability, intensity and localization; case studies & sensitivity checks.
-
-The exact dataset list and parameters are documented in the report PDF; this README provides a structured summary for GitHub.
